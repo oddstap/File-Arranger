@@ -131,9 +131,9 @@ inotifywait -m -e create -e moved_to --format "%f" $TARGET \
 
 
 			# Misc
-			else
+			#else
 				# This lists all the extensions in the directory then makes directories with the output
-				find . -type f | perl -ne 'print $1 if m/\.([^.\/]+)$/' | sort -u | xargs mkdir -p
+				#find . -type f | perl -ne 'print $1 if m/\.([^.\/]+)$/' | sort -u | xargs mkdir -p
 				# Move corresponding files into folders?
 			fi
 
