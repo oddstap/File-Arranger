@@ -46,7 +46,7 @@ inotifywait -m -e create -e moved_to --format "%f" $TARGET \
 			# Image file formats by file extension
 			elif [ ${FILENAME: -4} == ".jpg" ] || [ ${FILENAME: -5} == ".jpeg" ] || [ ${FILENAME: -4} == ".png" ] || [ ${FILENAME: -3} == ".ai" ] \
 				|| [ ${FILENAME: -4} == ".bmp" ] || [ ${FILENAME: -4} == ".gif" ] || [ ${FILENAME: -4} == ".ico" ] || [ ${FILENAME: -3} == ".ps" ] \
-				|| [ ${FILENAME: -4} == ".svg" ] || [ ${FILENAME: -4} == ".tif" ] [ ${FILENAME: -5} == ".tiff" ] || [ ${FILENAME: -4} == ".psd" ]
+				|| [ ${FILENAME: -4} == ".svg" ] || [ ${FILENAME: -4} == ".tif" ] || [ ${FILENAME: -5} == ".tiff" ] || [ ${FILENAME: -4} == ".psd" ]
 			then
 				mv "$TARGET/$FILENAME" "/home/$USER/Pictures"
 
