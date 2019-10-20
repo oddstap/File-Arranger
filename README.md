@@ -9,7 +9,10 @@ The first AutoShell.sh was completely written by me but as you can tell i did a 
 a nice man on a facebook linux group where he gave advice and even rewrote the entire script this is AutoShell_2.0.sh
 much cleaner right?
 
-ISSUE : The only issue i have so far is that when downloading a file the script will move the file while its downloading resulting in corruption.
-So if you can come up with a fix thank you but i also will take any ideas to make it better in general. 
+ISSUE : None that i know of but will update if any are found.
+
+FIXES : The issue with file corruption has been fixed in the 3.0 version. 
+It waits until the file is done downloading then moves it which is wonderful once again thanks to the co-Author
+which im not gonna lie did a majority of the work.
 
 -Thanks
