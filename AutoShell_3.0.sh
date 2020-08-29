@@ -9,7 +9,7 @@
 
 TARGET=$HOME/Downloads
 inotifywait -m -e close_write -e moved_to --format "%f" "$TARGET" \
-| while read FILENAME; do
+| while read -r FILENAME; do
 
   [ -s "$TARGET/$FILENAME" ] || continue
 
@@ -35,7 +35,7 @@ inotifywait -m -e close_write -e moved_to --format "%f" "$TARGET" \
     ;;
 
     # Video files
-    avi|wmv|3g2|3gp|flv|h264|m4v|mkv|mov|mp4|mpg|mpeg|rm|swf|vob|wmv)
+    avi|wmv|3g2|3gp|flv|h264|m4v|mkv|mov|mp4|mpg|mpeg|rm|swf|vob)
       DEST_DIR="$HOME/Videos"
     ;;
 
